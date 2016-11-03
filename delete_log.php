@@ -87,12 +87,12 @@ class DeleteLog{
 }//end class
 
 $do = new DeleteLog();
-$do->log_dir = ['/var/www/ycms.szlanyou.com/lanyoucar_logs',   //拼车日志目录
+$do->log_dir = ['/var/www/tmp/lanyoucar_logs',   //拼车日志目录
             '/var/www/html/temp_file',       //PHP临时上传目录
-            '/var/www/ycms.szlanyou.com/webroot/Public/upload',    //用户上传图片临时目录
+            '/var/www/tmp/webroot/Public/upload',    //用户上传图片临时目录
             '/tmp/session_temp',            //session 目录
-            '/var/www/ycms.szlanyou.com/dingdang/Runtime/Logs',   //tp 的logs
-            '/var/www/nissan.szlanyou.com/portal/portal/logs',   //nissan 开发环境log
+            '/var/www/tmp/dingdang/Runtime/Logs',   //tp 的logs
+            '/var/www/temp/portal/portal/logs',   //nissan 开发环境log
     ];
 
 $do->delete();
